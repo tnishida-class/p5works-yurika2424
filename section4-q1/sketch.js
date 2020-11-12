@@ -11,6 +11,13 @@ function setup(){
 function draw(){
   background(160, 192, 255);
   count = (count + 1) % cycle;
-  // BLANK[1]
-  ellipse(width / 2, height / 2, size);
+// BLANK[1]
+ if(count < 50) {
+     ellipse(width / 2, height / 2, 30 + 0.8*count);
+ }
+ else{
+  ellipse(width / 2, height / 2, 110 - 0.8*count);
+}
+  //size += 5
+
 }
