@@ -9,7 +9,7 @@ function setup(){
 }
 
 
-function balloon(t, x, y){
+function balloon(t){
 
   let w = textWidth(t);
   let h = textAscent() + textDescent();
